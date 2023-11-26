@@ -1,64 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Link Icons Library-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Link CSS Style-->
+    <link rel="stylesheet" href="css/logincss.css" />
 
-        .login-container {
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-top: 100px;
-        }
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="login">
+      <form class="container">
+        <h1 class="headline">Bem-vindo(a)</h1>
+        <h2 class="subheadline">Insira seus dados de acesso</h2>
+        
+        <div class="form">
+          <label class="label-email" for="email">E-mail</label>
+          <i class="bx bxs-user"></i>
+          <input class="input-email" type="email" id="email" placeholder="Seu email:" autocomplete="off">
+  
+          <label class="label-password" for="password">Senha</label>
+          <i class="bx bxs-key"></i>
+          <input class="input-password" type="password" id="password" placeholder="Sua senha:">
 
-        .login-container h2 {
-            text-align: center;
-        }
+          <a class="forgot"> Esqueceu a senha?</a>
 
-        .login-container label,
-        .login-container input {
-            display: block;
-            margin: 10px 0;
-        }
-
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        .login-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="seu_script_de_login.php" method="post">
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
-</body>
+          <input class="button" type="submit" value="Login">
+       </div>
+      </form>
+    </main>
+  </body>
 </html>
