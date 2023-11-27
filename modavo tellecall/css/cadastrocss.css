@@ -58,14 +58,14 @@ body {
 
 .login-button button {
     border: none;
-    background-color: #2BAEF9;
+    background: linear-gradient(135deg, #2676EF, #40A9F4);
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .login-button button:hover {
-    background-color: #217eb4;
+    background: linear-gradient(135deg, #2676EF, #40A9F4);
 }
 
 .login-button button a {
@@ -159,7 +159,7 @@ body {
 }
 
 .continue-button button:hover {
-    background-color: #217eb4;
+    background: linear-gradient(135deg, #2676EF, #40A9F4);
 }
 
 .continue-button button a {
