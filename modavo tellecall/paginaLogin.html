@@ -34,5 +34,33 @@
        </div>
       </form>
     </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const form = document.querySelector('form');
+  
+          form.addEventListener('submit', function (event) {
+              event.preventDefault();
+  
+              // Lógica de login (adicionar sua lógica de autenticação aqui)
+              const email = document.getElementById('email').value;
+              const password = document.getElementById('password').value;
+  
+              // Exemplo de autenticação simples (substitua por sua lógica real)
+              if (authenticateUser(email, password)) {
+                  // Redirecionar para a página principal (index.html)
+                  window.location.href = 'index.html';
+              } else {
+                  alert('Login falhou. Verifique suas credenciais.');
+              }
+          });
+  
+          // Função para autenticar o usuário (substitua por sua lógica real)
+          function authenticateUser(email, password) {
+              // Adicione sua lógica de autenticação aqui
+              // Retorna true se a autenticação for bem-sucedida, false caso contrário
+              return true;  // Este é um exemplo simples, substitua por sua lógica real
+          }
+      });
+  </script>
   </body>
 </html>
